@@ -6,64 +6,153 @@
   <title>StreamTrigger</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #ffffff;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #080b18;
+      color: #ffffff;
     }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 24px;
+
+    header {
+      padding: 70px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #111827, #1e1b4b);
     }
+
     h1 {
-      font-size: 42px;
-      margin-bottom: 12px;
+      font-size: 48px;
+      margin: 0 0 16px;
     }
+
     p {
-      font-size: 18px;
+      color: #cbd5e1;
       line-height: 1.6;
-      color: #d1d5db;
     }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
     .card {
-      background: #111827;
-      border-radius: 14px;
-      padding: 24px;
-      margin-top: 24px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 24px;
     }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #ff2f7d;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
     a {
-      color: #22d3ee;
-      text-decoration: none;
+      color: #60a5fa;
     }
-    ul {
-      line-height: 1.8;
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>StreamTrigger</h1>
+
+<header>
+  <span class="badge">Desktop App for Streamers</span>
+  <h1>StreamTrigger</h1>
+  <p>
+    StreamTrigger is a desktop application that helps streamers manage TikTok LIVE interactions
+    and trigger real-time actions based on viewer activity.
+  </p>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h2>What is StreamTrigger?</h2>
     <p>
-      StreamTrigger is a desktop application for streamers that connects with TikTok
-      to authenticate users and manage live interaction triggers.
+      StreamTrigger connects to TikTok LIVE sessions and listens for real-time events such as
+      likes, gifts, chat messages, follows, and viewer interactions. Streamers can use these
+      events to power alerts, points, rankings, sounds, overlays, and automation tools.
     </p>
+  </section>
 
+  <section class="grid">
     <div class="card">
-      <h2>Main Features</h2>
-      <ul>
-        <li>TikTok account authentication</li>
-        <li>Basic user profile access</li>
-        <li>Gift and interaction based trigger actions</li>
-        <li>Desktop workflow for stream automation</li>
-      </ul>
+      <h3>Live Event Detection</h3>
+      <p>
+        Receive TikTok LIVE events in real time, including likes, gifts, chat messages,
+        and follows.
+      </p>
     </div>
 
     <div class="card">
-      <h2>Legal</h2>
-      <p><a href="/terms.html">Terms of Service</a></p>
-      <p><a href="/privacy.html">Privacy Policy</a></p>
+      <h3>Points & Ranking System</h3>
+      <p>
+        Reward viewers automatically with points and levels based on their live interactions.
+      </p>
     </div>
-  </div>
+
+    <div class="card">
+      <h3>Automation Tools</h3>
+      <p>
+        Trigger sounds, overlays, AutoHotkey actions, webhooks, and other streamer tools.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Desktop Control Panel</h3>
+      <p>
+        Manage live activity, settings, rankings, diagnostics, and integrations from one app.
+      </p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>How It Works</h2>
+    <p>
+      1. The streamer opens the StreamTrigger desktop app.<br>
+      2. The streamer connects a TikTok LIVE username.<br>
+      3. StreamTrigger receives live events in real time.<br>
+      4. The app triggers actions such as points, levels, sounds, overlays, or webhooks.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Data & Privacy</h2>
+    <p>
+      StreamTrigger is designed for live interaction automation. The app does not sell personal
+      data. Live event data is used only to provide streamer-facing functionality such as points,
+      rankings, and event triggers.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Legal</h2>
+    <p>
+      <a href="terms.html">Terms of Service</a><br>
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 StreamTrigger. All rights reserved.
+</footer>
+
 </body>
 </html>
